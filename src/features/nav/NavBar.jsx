@@ -1,16 +1,21 @@
 import React from 'react';
 import { Container, Menu, Button } from 'semantic-ui-react';
 
-export default function NavBar() {
+export default function NavBar({ setFormOpen }) {
   return (
-    <Menu inverted fixed='tup'>
+    <Menu inverted fixed='top'>
       <Container>
         <Menu.Item header>
-          <img src='/assets/logo.png' alt='logo' style={{marginRight: 15}} />
+          <img src='/assets/logo.png' alt='logo' style={{ marginRight: 15 }} />
         </Menu.Item>
         <Menu.Item name='Events' />
         <Menu.Item>
-          <Button positive inverted content='Crete Event' />
+          <Button
+            onClick={() => setFormOpen(true)}
+            positive
+            inverted
+            content='Crete Event'
+          />
         </Menu.Item>
         <Menu.Item position='right'>
           <Button basic inverted content='Login' />
