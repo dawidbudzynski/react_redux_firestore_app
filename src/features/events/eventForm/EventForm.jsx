@@ -4,7 +4,6 @@ import { Button, Form, Header, Segment } from 'semantic-ui-react';
 
 export default function EventForm({
   setFormOpen,
-  setEvents,
   createEvent,
   selectedEvent,
   updateEvent,

@@ -40,7 +40,6 @@ export default function EventDashboard({
         {formOpen && (
           <EventForm
             setFormOpen={setFormOpen}
-            setEvents={setEvents}
             createEvent={handleCreateEvent}
             selectedEvent={selectedEvent}
             updateEvent={handleUpdateEvent}
